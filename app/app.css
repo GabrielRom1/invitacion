@@ -30,19 +30,23 @@ body {
   animation: fadeIn 0.6s ease-out;
 }
 
+
+
 @keyframes marquee {
-  0% {
-    transform: translateX(0%);
+  from {
+    transform: translate3d(0, 0, 0);
   }
-  100% {
-    transform: translateX(-50%); /* Se desplaza exactamente la mitad (el primer grupo de fotos) */
+  to {
+    transform: translate3d(calc(-50% - 12px), 0, 0);
   }
 }
 
 .animate-marquee {
   display: flex;
+  flex-wrap: nowrap;
   width: max-content;
-  animation: marquee 15s linear infinite;
+  will-change: transform;
+  animation: marquee 70s linear infinite;
 }
 
 /* Opcional: Pausa el movimiento elegante si el usuario pone el cursor encima */

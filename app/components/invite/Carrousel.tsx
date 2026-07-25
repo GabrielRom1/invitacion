@@ -1,16 +1,15 @@
 import { useEffect, useState } from "react";
 
 const FOTOS_BODA = [
-  "/assets/carousel-1.jpg",
-  "/assets/carousel-2.jpg",
-  "/assets/carousel-3.jpeg",
-  "/assets/carousel-1.jpg",
-  "/assets/carousel-2.jpg",
-  "/assets/carousel-3.jpeg",
-  "/assets/carousel-1.jpg",
-  "/assets/carousel-2.jpg",
-  "/assets/carousel-3.jpeg",
-
+  "/assets/love-story/carrousel/Z61_9233.jpg",
+  "/assets/love-story/carrousel/Z61_9248.jpg",
+  "/assets/love-story/carrousel/Z61_9256.jpg",
+  "/assets/love-story/carrousel/Z61_9391-Edit.jpg",
+  "/assets/love-story/carrousel/Z62_2435.jpg",
+  "/assets/love-story/carrousel/Z62_2492.jpg",
+  "/assets/love-story/carrousel/Z62_2581.jpg",
+  "/assets/love-story/carrousel/Z62_2686.jpg",
+  "/assets/love-story/carrousel/Z62_2719.jpg",
 ];
 
 export default function PhotoCarrousel() {
@@ -21,8 +20,8 @@ export default function PhotoCarrousel() {
       <div className="relative w-full flex">
         
         {/* TIRA DE IMÁGENES ANIMADA (Doble grupo para el bucle infinito) */}
-        <div className="flex gap-6 animate-marquee whitespace-nowrap min-w-full">
-          
+        {/* <div className="flex gap-6 animate-marquee whitespace-nowrap min-w-full"> */}
+          <div className="flex flex-nowrap w-max gap-6 animate-marquee">
           {/* Grupo 1 */}
           {FOTOS_BODA.map((src, index) => (
             <div 

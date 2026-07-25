@@ -9,6 +9,8 @@ import Footer from "~/components/invite/Footer";
 import PhotoCarrousel from "~/components/invite/Carrousel";
 import Divider from "~/components/invite/Divider";
 import Story from "~/components/invite/Story";
+import DressCode from "~/components/invite/DressCode";
+import DetailsAndGifts from "~/components/invite/DetailsAndGifts";
 
 export default function Invite() {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -58,7 +60,7 @@ export default function Invite() {
         <Hero />
         {/* <Countdown /> */} 
         {/* mover countdown al hero */}
-        <Countdown targetDate="2026-12-27T15:00:00" />
+        {/* <Countdown targetDate="2026-12-27T15:00:00" /> */}
         <Divider />
         <Welcome />
 
@@ -68,7 +70,10 @@ export default function Invite() {
         <Venue />
 
         {/* anadir en venue detalles importantes como no alcohol LLEGUEN TEMPRANO. No telefonos en  */}
+
+        
         {/* codigo de vestimenta  con link de inspiracion*/}
+        <DressCode/>
 
         {/* confirmacion de asistencia con link a formulario */}
         <Schedule />
@@ -77,6 +82,8 @@ export default function Invite() {
         {/* contacto */}
 
         {/* ath movil */}
+
+        <DetailsAndGifts/>
 
         {/* galeria digital */}
 

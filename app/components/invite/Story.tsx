@@ -7,7 +7,7 @@ export default function Story() {
         {/* COLUMNA DE LA FOTO */}
         <div className="w-full md:w-1/2 shrink-0 overflow-hidden rounded-xl shadow-sm border border-[#e6ded2]/40">
           <img
-            src="/assets/horizontal.jpeg"
+            src="/assets/love-story/Z62_2423.jpg"
             alt="Nuestra historia"
             className="w-full h-64 sm:h-80 md:h-[400px] object-cover"
           />

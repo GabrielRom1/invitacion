@@ -1,15 +1,11 @@
 import { useEffect, useState } from "react";
 
 interface CountdownProps {
-  targetDate: string | Date; // Recibe la fecha objetivo, ej: "2026-12-27T18:00:00"
+  targetDate: string | Date;
 }
 
 export default function Countdown({ targetDate }: CountdownProps) {
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-  });
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0 });
 
   useEffect(() => {
     const calculateTimeLeft = () => {
@@ -23,72 +19,58 @@ export default function Countdown({ targetDate }: CountdownProps) {
           minutes: Math.floor((difference / 1000 / 60) % 60),
         };
       }
-      
       setTimeLeft(timeLeftData);
     };
 
     calculateTimeLeft();
-    const timer = setInterval(calculateTimeLeft, 60000); // Actualiza cada minuto ya que no mostramos segundos
-
+    const timer = setInterval(calculateTimeLeft, 60000);
     return () => clearInterval(timer);
   }, [targetDate]);
 
   const formatNumber = (num: number) => String(num).padStart(2, "0");
 
   return (
-    <section className="py-12 text-center select-none bg-[#fbf8f3] text-[#875e33] px-2 relative overflow-hidden">
-      {/* Detalles florales o texturas de fondo opcionales si usas imágenes de esquina en tu proyecto */}
-      
-      {/* Bloque de Títulos */}
-      <div className="mb-14">
-        <h2 className="font-serif italic text-4xl md:text-5xl lg:text-6xl text-[#9c7449] font-normal tracking-wide mb-4">
-          Cuenta Atrás
-        </h2>
-        <p className="font-serif text-sm md:text-base uppercase tracking-[0.25em] text-[#b3926a] font-medium">
-          Hasta el 27 de diciembre de 2026
-        </p>
-      </div>
-      
+    <div className="w-full select-none text-white py-4 max-w-md mx-auto">
       {/* Contenedor del Marcador */}
-      <div className="flex justify-center items-center max-w-xl mx-auto">
+      <div className="flex justify-center items-center">
         
         {/* Días */}
-        <div className="flex-1 px-4 text-center">
-          <p className="font-serif italic font-light text-4xl md:text-6xl text-[#875e33]">
+        <div className="flex-1 text-center">
+          <p className="font-serif italic font-light text-4xl md:text-5xl text-white drop-shadow-sm">
             {formatNumber(timeLeft.days)}
           </p>
-          <span className="text-xs md:text-sm uppercase tracking-[0.2em] block mt-4 text-[#b3926a] font-medium">
+          <span className="text-[10px] md:text-xs uppercase tracking-[0.25em] block mt-2 text-white/70 font-light">
             Días
           </span>
         </div>
 
-        {/* Línea Divisoria Fina */}
-        <div className="h-14 w-[1px] bg-[#e6ded2]" />
+        {/* Línea Divisoria Fina Translúcida */}
+        <div className="h-8 w-[1px] bg-white/20" />
 
         {/* Horas */}
-        <div className="flex-1 px-4 text-center">
-          <p className="font-serif italic font-light text-4xl md:text-6xl text-[#875e33]">
+        <div className="flex-1 text-center">
+          <p className="font-serif italic font-light text-4xl md:text-5xl text-white drop-shadow-sm">
             {formatNumber(timeLeft.hours)}
           </p>
-          <span className="text-xs md:text-sm uppercase tracking-[0.2em] block mt-4 text-[#b3926a] font-medium">
+          <span className="text-[10px] md:text-xs uppercase tracking-[0.25em] block mt-2 text-white/70 font-light">
             Horas
           </span>
         </div>
 
-        {/* Línea Divisoria Fina */}
-        <div className="h-14 w-[1px] bg-[#e6ded2]" />
+        {/* Línea Divisoria Fina Translúcida */}
+        <div className="h-8 w-[1px] bg-white/20" />
 
         {/* Minutos */}
-        <div className="flex-1 px-4 text-center">
-          <p className="font-serif italic font-light text-4xl md:text-6xl text-[#875e33]">
+        <div className="flex-1 text-center">
+          <p className="font-serif italic font-light text-4xl md:text-5xl text-white drop-shadow-sm">
             {formatNumber(timeLeft.minutes)}
           </p>
-          <span className="text-xs md:text-sm uppercase tracking-[0.2em] block mt-4 text-[#b3926a] font-medium">
+          <span className="text-[10px] md:text-xs uppercase tracking-[0.25em] block mt-2 text-white/70 font-light">
             Minutos
           </span>
         </div>
 
       </div>
-    </section>
+    </div>
   );
 }
