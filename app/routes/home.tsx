@@ -33,13 +33,13 @@ if (opened) {
         }`}
       >
         <img
-          src="/public/assets/sobre.svg"
+          src="/assets/sobre.svg"
           alt="Envelope"
 className="w-full h-full object-cover object-[50%_50%] lg:hidden"
         />
 
                 <img
-          src="/public/assets/sobre-horizontal.png"
+          src="/assets/sobre-horizontal.png"
           alt="Envelope"
 className="w-full h-full object-cover  hidden lg:block"
         />

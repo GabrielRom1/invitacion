@@ -12,7 +12,7 @@ export default function DressCode() {
         {/* Añadimos un sutil filtro o fondo si tu imagen es transparente */}
         <div className="flex justify-center mb-6">
           <img 
-            src="/public/assets/check.png" 
+            src="/assets/check.png" 
             alt="Vestimenta formal" 
             className="w-auto h-28 object-contain opacity-90 drop-shadow-sm"
           />
