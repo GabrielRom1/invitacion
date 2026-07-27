@@ -1,0 +1,53 @@
+{
+  "_invite-Bw6mtOAa.js": {
+    "file": "assets/invite-Bw6mtOAa.js",
+    "name": "invite",
+    "imports": [
+      "_jsx-runtime-BePi6mfC.js"
+    ]
+  },
+  "_jsx-runtime-BePi6mfC.js": {
+    "file": "assets/jsx-runtime-BePi6mfC.js",
+    "name": "jsx-runtime"
+  },
+  "app/root.tsx?__react-router-build-client-route": {
+    "file": "assets/root-BTwKWNDu.js",
+    "name": "root",
+    "src": "app/root.tsx?__react-router-build-client-route",
+    "isEntry": true,
+    "imports": [
+      "_jsx-runtime-BePi6mfC.js"
+    ],
+    "css": [
+      "assets/root-YEcoIy79.css"
+    ]
+  },
+  "app/routes/home.tsx?__react-router-build-client-route": {
+    "file": "assets/home-BvE7LRll.js",
+    "name": "home",
+    "src": "app/routes/home.tsx?__react-router-build-client-route",
+    "isEntry": true,
+    "imports": [
+      "_jsx-runtime-BePi6mfC.js",
+      "_invite-Bw6mtOAa.js"
+    ]
+  },
+  "app/routes/invite.tsx?__react-router-build-client-route": {
+    "file": "assets/invite-CKXrvWTW.js",
+    "name": "invite",
+    "src": "app/routes/invite.tsx?__react-router-build-client-route",
+    "isEntry": true,
+    "imports": [
+      "_invite-Bw6mtOAa.js"
+    ]
+  },
+  "node_modules/@react-router/dev/dist/config/defaults/entry.client.tsx": {
+    "file": "assets/entry.client-C2gjEqo8.js",
+    "name": "entry.client",
+    "src": "node_modules/@react-router/dev/dist/config/defaults/entry.client.tsx",
+    "isEntry": true,
+    "imports": [
+      "_jsx-runtime-BePi6mfC.js"
+    ]
+  }
+}
