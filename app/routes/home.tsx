@@ -33,13 +33,13 @@ if (opened) {
         }`}
       >
         <img
-          src="/assets/sobre.svg"
+          src="/assets/invitacion-boda.svg"
           alt="Envelope"
 className="w-full h-full object-cover object-[50%_50%] lg:hidden"
         />
 
                 <img
-          src="/assets/sobre-horizontal.png"
+          src="/assets/invitacion-boda-horizontal.png"
           alt="Envelope"
 className="w-full h-full object-cover  hidden lg:block"
         />
