@@ -6,7 +6,8 @@ export default function Hero() {
       {/* Imagen de Fondo (Nota: En Vite/Next.js lo ideal es usar "/assets/carousel-1.jpg" directamente) */}
       <img
         className="absolute inset-0 w-full h-full object-cover"
-        src="/assets/love-story/Z61_9408.jpg"
+        // src="/assets/love-story/Z61_9408.jpg"
+        src="https://res.cloudinary.com/dfgyyb9wl/image/upload/v1785197768/Z61_9408_o9trfs.jpg"
         alt="Fondo de portada"
       />
 
