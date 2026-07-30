@@ -26,35 +26,38 @@ export default function Venue() {
           </div>
 
           {/* COLUMNA DE DETALLES IMPORTANTES (Derecha en lg, Arriba en móvil) */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left border-b lg:border-b-0 lg:border-l border-white/20 pb-10 lg:pb-0 lg:pl-12">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center border-b lg:border-b-0 lg:border-l border-white/20 pb-10 lg:pb-0 lg:pl-12">
             <h3 className="font-sans text-xs md:text-sm uppercase tracking-[0.3em] font-semibold text-white/80 mb-6 lg:mb-8">
               Detalles Importantes
             </h3>
             
-            <div className="space-y-8">
-              {/* Detalle 1 */}
-              <div>
-                <h4 className="font-serif italic text-2xl mb-2">Lleguen Temprano</h4>
+            <div className="grid gap-4 md:grid-cols-3 lg:max-w-[42rem] w-full items-stretch justify-center mx-auto">
+              <article className="flex flex-col items-center rounded-2xl border border-white/20 bg-white/10 p-5 text-center shadow-sm min-h-[280px] w-full max-w-[220px] h-full mx-auto">
+                <h4 className="font-serif italic text-[1.6rem] leading-tight mb-2 min-h-[3rem]">
+                  Lleguen Temprano
+                </h4>
                 <p className="font-sans text-sm md:text-base font-light text-white/90 leading-relaxed">
-                  Les pedimos encarecidamente puntualidad para poder disfrutar juntos de cada momento especial desde el primer segundo.
+                  Les pedimos puntualidad para disfrutar cada momento especial desde el primer segundo.
                 </p>
-              </div>
+              </article>
 
-              {/* Detalle 2 */}
-              <div>
-                <h4 className="font-serif italic text-2xl mb-2">Celebración sin Alcohol</h4>
+              <article className="flex flex-col items-center rounded-2xl border border-white/20 bg-white/10 p-5 text-center shadow-sm min-h-[280px] w-full max-w-[220px] h-full mx-auto">
+                <h4 className="font-serif italic text-[1.6rem] leading-tight mb-2 min-h-[3rem]">
+                  Celebración sin Alcohol
+                </h4>
                 <p className="font-sans text-sm md:text-base font-light text-white/90 leading-relaxed">
                   Agradecemos su amor y apoyo en esta decisión. Será un ambiente completamente familiar y lleno de bendición.
                 </p>
-              </div>
+              </article>
 
-              {/* Detalle 3 */}
-              <div>
-                <h4 className="font-serif italic text-2xl mb-2">Boda Desconectada</h4>
+              <article className="flex flex-col items-center rounded-2xl border border-white/20 bg-white/10 p-5 text-center shadow-sm min-h-[280px] w-full max-w-[220px] h-full mx-auto">
+                <h4 className="font-serif italic text-[1.6rem] leading-tight mb-2 min-h-[3rem]">
+                  Boda Desconectada
+                </h4>
                 <p className="font-sans text-sm md:text-base font-light text-white/90 leading-relaxed">
-                  No teléfonos en la ceremonia. Queremos ver sus rostros y compartir su presencia; nuestro equipo de fotógrafos se encargará de capturar todo.
+                  Sin teléfonos en la ceremonia. Queremos ver sus rostros y compartir su presencia con ustedes.
                 </p>
-              </div>
+              </article>
             </div>
           </div>
 

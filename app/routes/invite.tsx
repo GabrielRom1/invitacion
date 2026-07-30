@@ -65,7 +65,6 @@ export default function Invite() {
         <Welcome />
 
         <Story />
-        {/* <Divider /> */}
         <PhotoCarrousel />
         <Venue />
 

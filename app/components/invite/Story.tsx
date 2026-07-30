@@ -1,3 +1,5 @@
+import Divider from "~/components/invite/Divider";
+
 export default function Story() {
   return (
     <section className="w-full bg-[#fbf8f3] py-20 px-6 sm:px-10 md:px-16 lg:px-24 select-none">
@@ -16,19 +18,18 @@ export default function Story() {
         {/* COLUMNA DE TEXTO */}
         <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left">
           <h2 className="font-serif italic text-3xl md:text-4xl lg:text-5xl text-[#9c7449] font-normal tracking-wide mb-6">
-            Nuestra historia de amor
+            Historia de Amor
           </h2>
           
           <p className="font-sans text-base md:text-lg text-[#875e33]/90 leading-relaxed font-light">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, rerum 
-            earum! Doloribus minima provident quibusdam nostrum, ea voluptates 
-            vel fugiat. Nihil eaque exercitationem vero nostrum beatae aliquid 
-            neque consequatur corporis? Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Minima reiciendis a fugit adipisci est saepe 
-            consequatur ullam harum ipsam quisquam odit maxime.
+          
+            Nuestra historia comenzó alrededor del 2015, cuando nos conocimos en la escuela intermedia. Éramos solo dos niños que jamás imaginamos que algún día compartiriamos la vida juntos. Sin darnos cuenta, crecimos lado a lado y, en décimo grado, nuestra amistad se transformó en el hermoso amor que hoy nos une. Han sido años de crecimiento, aprendizaje y mucha felicidad. También hemos enfrentado desafíos, pero la mano de Dios siempre nos ha sostenido. Hoy damos este paso con la ilusión de seguir escribiendo nuestra historia, confiando en que Él siempre será el centro de nuestro matrimonio y, con su gracia, nuestro amor perdurará para siempre.
           </p>
         </div>
       </div>
+
+      <Divider />
+      
 
       {/* BLOQUE DEL VERSÍCULO BÍBLICO TOTALMENTE PULIDO */}
       <div className="max-w-2xl mx-auto text-center mt-16 border-t border-[#e6ded2]/40 pt-12">

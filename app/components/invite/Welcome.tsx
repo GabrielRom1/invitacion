@@ -4,11 +4,10 @@ export default function Welcome() {
     <section className="py-12 text-center select-none bg-[#fbf8f3] text-[#875e33] px-2 relative overflow-hidden">
 
       <h2 className="text-4xl md:text-6xl font-serif mb-6">
-        ¡Bienvenidos!
+        ¡El Comienzo de Nuestra Historia!
       </h2>
-
-      <p className="text-lg leading-relaxed opacity-80">
-        Os invitamos con mucho cariño a celebrar nuestra boda en el precioso pueblo de Ronda, Andalucía. Estamos deseando compartir este momento inolvidable con las personas más especiales de nuestras vidas.
+      <p className="text-lg leading-relaxed opacity-80 max-w-2xl mx-auto">
+          Con gratitud a Dios y mucha emoción queremos invitarlos a celebrar junto a nosotros el comienzo de esta nueva etapa. Será un honor contar con su presencia en el día más especial de nuestras vidas. 
       </p>
     </section>
   );
