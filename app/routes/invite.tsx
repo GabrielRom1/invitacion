@@ -75,7 +75,7 @@ export default function Invite() {
         <DressCode/>
 
         {/* confirmacion de asistencia con link a formulario */}
-        <Schedule />
+        {/* <Schedule /> */}
         <RSVP />
 
         {/* contacto */}

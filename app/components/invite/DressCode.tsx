@@ -21,11 +21,11 @@ export default function DressCode() {
         {/* DESCRIPCIÓN */}
         <div className="mb-10">
           <p className="font-sans text-lg uppercase tracking-[0.2em] font-medium text-[#875e33]">
-            Formal Elegante
+            Semi Formal
           </p>
           <p className="font-sans text-sm font-light text-[#875e33]/70 mt-2 leading-relaxed">
             Agradecemos asistir vistiendo trajes formales. <br />
-            Nos reservamos el uso del color blanco.
+            Nos reservamos el uso del color blanco, rosa, azul y dorado.
           </p>
         </div>
 

@@ -97,24 +97,40 @@ export default function DetailsAndGifts() {
                 </Link>
               </div>
 
-              {/* Divisor Línea Fina */}
+{/* Divisor Línea Fina */}
               <div className="hidden md:block h-20 w-[1px] bg-[#e6ded2]" />
               <div className="block md:hidden w-20 h-[1px] bg-[#e6ded2]" />
 
-              {/* Código QR */}
-              <div className="flex flex-col items-center gap-3">
-                <div className="p-3 rounded-xl bg-white shadow-sm border border-[#e6ded2]/50">
-                  <QRCodeCanvas
-                    value="https://www.google.com" // Cambia por tu dominio real de producción
-                    size={120}
-                    bgColor="#ffffff"
-                    fgColor="#875e33"
-                    level="H"
-                  />
+              {/* Boarding Pass Entry */}
+              <div class="flex flex-col items-center gap-3">
+                <div class="relative p-1 rounded-2xl bg-gradient-to-br from-[#875e33] to-[#9c7449] shadow-lg border border-[#b3926a]/30 transform hover:scale-105 transition-all duration-300">
+                  <div class="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-[#b3926a]/30 rounded-tl-2xl"></div>
+                  <div class="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-[#b3926a]/30 rounded-tr-2xl"></div>
+                  <div class="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-[#b3926a]/30 rounded-bl-2xl"></div>
+                  <div class="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-[#b3926a]/30 rounded-br-2xl"></div>
+                  <div class="p-2.5 rounded-xl bg-white backdrop-blur-sm">
+                    <QRCodeCanvas
+                      value="https://www.google.com" // Cambia por tu dominio real de producción
+                      size={120}
+                      bgColor="#ffffff"
+                      fgColor="#875e33"
+                      level="H"
+                    />
+                  </div>
+                  <div class="absolute -top-2 left-1/2 transform -translate-x-1/2">
+                    <div class="w-8 h-1 bg-[#b3926a]/50 rounded-full"></div>
+                    <div class="w-12 h-0.5 bg-[#b3926a]/30 mx-auto mt-0.5 rounded-full"></div>
+                  </div>
+                  <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
+                    <div class="w-8 h-1 bg-[#b3926a]/50 rounded-full"></div>
+                    <div class="w-12 h-0.5 bg-[#b3926a]/30 mx-auto mt-0.5 rounded-full"></div>
+                  </div>
                 </div>
-                <p className="text-xs uppercase tracking-widest text-[#b3926a] font-medium">
-                  Escanea con tu celular
-                </p>
+                <div class="relative">
+                  <p class="text-xs uppercase tracking-widest text-[#b3926a] font-medium bg-gradient-to-r from-[#fbf8f3] via-[#f5f0e8] to-[#fbf8f3] px-4 py-1 rounded-full border border-[#b3926a]/20">
+                    ✈️ Escanea con tu celular
+                  </p>
+                </div>
               </div>
 
             </div>

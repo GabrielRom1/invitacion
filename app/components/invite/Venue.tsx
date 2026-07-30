@@ -16,12 +16,27 @@ export default function Venue() {
               Hacienda Bendecida
             </p>
             
-            <div className="w-full overflow-hidden rounded-xl shadow-lg border border-white/10 bg-white/5">
-              <iframe
-                className="w-full h-72 md:h-80 border-none"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3788.5267674502606!2d-65.9223076!3d18.2775031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c035fa6f21bc74f%3A0xed9d256ee10f6a64!2sHacienda%20Bendecida!5e0!3m2!1ses!2sus!4v1782011568714!5m2!1ses!2sus"
-                title="Mapa de ubicación"
-              />
+            <div className="relative w-full max-w-2xl mx-auto">
+              <div className="absolute -inset-1 bg-gradient-to-r from-amber-400/20 via-transparent to-amber-600/20 rounded-2xl animate-pulse"></div>
+              <div className="relative bg-gradient-to-b from-white/10 to-white/5 rounded-2xl p-6 border border-white/20 backdrop-blur-sm shadow-2xl">
+                <div className="flex items-center justify-between mb-4 pb-4 border-b border-white/10">
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 rounded-full bg-red-400 animate-pulse"></div>
+                    <span className="text-xs uppercase tracking-wider text-white/70">Hacienda Bendecida, Carolina</span>
+                  </div>
+                  <div className="text-xs uppercase tracking-wider text-amber-300 font-semibold">
+                    2:00 PM
+                  </div>
+                </div>
+                
+                <div className="w-full overflow-hidden rounded-xl shadow-inner border border-white/10 bg-white/5">
+                  <iframe
+                    className="w-full h-72 md:h-80 border-none"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3788.5267674502606!2d-65.9223076!3d18.2775031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c035fa6f21bc74f%3A0xed9d256ee10f6a64!2sHacienda%20Bendecida!5e0!3m2!1ses!2sus!4v1782011568714!5m2!1ses!2sus"
+                    title="Ubicación del destino"
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
