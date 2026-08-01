@@ -2,7 +2,7 @@ import Divider from "~/components/invite/Divider";
 
 export default function Story() {
   return (
-    <section className="w-full bg-[#fbf8f3] py-20 px-6 sm:px-10 md:px-16 lg:px-24 select-none">
+    <section className="w-full bg-primary py-20 px-6 sm:px-10 md:px-16 lg:px-24 select-none">
       {/* Contenedor principal: Cambia de columna (móvil) a fila (desktop) */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-16 max-w-6xl mx-auto mb-20">
         
@@ -21,7 +21,7 @@ export default function Story() {
             Historia de Amor
           </h2>
           
-          <p className="font-sans text-base md:text-lg text-[#875e33]/90 leading-relaxed font-light">
+          <p className="font-sans text-base md:text-lg text-[#9c7449]/90 leading-relaxed font-light">
           
             Nuestra historia comenzó alrededor del 2015, cuando nos conocimos en la escuela intermedia. Éramos solo dos niños que jamás imaginamos que algún día compartiriamos la vida juntos. Sin darnos cuenta, crecimos lado a lado y, en décimo grado, nuestra amistad se transformó en el hermoso amor que hoy nos une. Han sido años de crecimiento, aprendizaje y mucha felicidad. También hemos enfrentado desafíos, pero la mano de Dios siempre nos ha sostenido. Hoy damos este paso con la ilusión de seguir escribiendo nuestra historia, confiando en que Él siempre será el centro de nuestro matrimonio y, con su gracia, nuestro amor perdurará para siempre.
           </p>
@@ -33,7 +33,7 @@ export default function Story() {
 
       {/* BLOQUE DEL VERSÍCULO BÍBLICO TOTALMENTE PULIDO */}
       <div className="max-w-2xl mx-auto text-center mt-16 border-t border-[#e6ded2]/40 pt-12">
-        <p className="font-serif italic text-2xl md:text-3xl text-[#875e33] leading-relaxed">
+        <p className="font-serif italic text-2xl md:text-3xl text-[#9c7449] leading-relaxed">
           «El amor todo lo sufre, todo lo cree, <br className="hidden sm:inline" /> todo lo espera, todo lo soporta.»
         </p>
         

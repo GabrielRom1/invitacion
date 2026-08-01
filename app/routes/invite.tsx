@@ -75,6 +75,7 @@ export default function Invite() {
 
         {/* anadir en venue detalles importantes como no alcohol LLEGUEN TEMPRANO. No telefonos en  */}
 
+        <Divider />
         
         {/* codigo de vestimenta  con link de inspiracion*/}
         <DressCode/>

@@ -14,7 +14,7 @@ const FOTOS_BODA = [
 
 export default function PhotoCarrousel() {
   return (
-    <section className="py-24 bg-[#fbf8f3] overflow-hidden select-none">
+    <section className="py-24 bg-primary overflow-hidden select-none">
       
       {/* Contenedor principal que enmascara las fotos fuera de la pantalla */}
       <div className="relative w-full flex">
