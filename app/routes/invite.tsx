@@ -67,9 +67,9 @@ export default function Invite() {
 
         <Story />
         <PhotoCarrousel />
-        <RSVP />
 
         <Venue />
+        <RSVP />
 
 
 
