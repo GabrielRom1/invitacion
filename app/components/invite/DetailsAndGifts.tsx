@@ -53,7 +53,7 @@ export default function DetailsAndGifts() {
           </div>
 
           {/* ================= SECCIÓN: ATH MÓVIL / REGALOS ================= */}
-          <div className="text-center max-w-2xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto ">
             <h3 className="font-serif italic text-4xl md:text-5xl text-[#9c7449] tracking-wide mb-6">
               Ayúdanos a construir nuestro futuro
             </h3>
@@ -71,7 +71,7 @@ export default function DetailsAndGifts() {
                 onClick={openModal}
                 className="inline-flex items-center justify-center rounded-full border border-[#875e33]/40 bg-transparent px-8 py-2.5 font-sans text-xs uppercase tracking-[0.2em] text-[#875e33] transition-all duration-300 hover:bg-[#875e33] hover:text-white hover:scale-105 active:scale-95 cursor-pointer font-medium"
               >
-                Ver Datos de Transferencia
+                Ver Datos de Transferencia??
               </button>
             </div>
           </div>

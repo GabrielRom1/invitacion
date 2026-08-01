@@ -10,11 +10,12 @@ import PhotoCarrousel from "~/components/invite/Carrousel";
 import Divider from "~/components/invite/Divider";
 import Story from "~/components/invite/Story";
 import DressCode from "~/components/invite/DressCode";
-import DetailsAndGifts from "~/components/invite/DetailsAndGifts";
+import ContactSection from "~/components/invite/ContactSection";
+import FutureSection from "~/components/invite/FutureSection";
+import GalleryDigitalSection from "~/components/invite/GalleryDigitalSection";
 
 export default function Invite() {
   const audioRef = useRef<HTMLAudioElement>(null);
-  // Estado para saber si la música está activa o pausada
   const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
@@ -66,7 +67,11 @@ export default function Invite() {
 
         <Story />
         <PhotoCarrousel />
+        <RSVP />
+
         <Venue />
+
+
 
         {/* anadir en venue detalles importantes como no alcohol LLEGUEN TEMPRANO. No telefonos en  */}
 
@@ -75,16 +80,12 @@ export default function Invite() {
         <DressCode/>
 
         {/* confirmacion de asistencia con link a formulario */}
-        {/* <Schedule /> */}
-        <RSVP />
 
-        {/* contacto */}
+        <ContactSection />
 
-        {/* ath movil */}
+        <FutureSection />
 
-        <DetailsAndGifts/>
-
-        {/* galeria digital */}
+        <GalleryDigitalSection />
 
         <Footer />
 

@@ -32,7 +32,7 @@ export default function DressCode() {
         {/* BOTÓN DE INSPIRACIÓN DE PINTEREST */}
         <div className="flex justify-center">
           <a 
-            href="https://www.pinterest.com" 
+            href="https://pin.it/14Ec6NfuT" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full border border-[#875e33]/50 bg-transparent px-8 py-3 font-sans text-xs uppercase tracking-[0.25em] text-[#875e33] transition-all duration-300 hover:bg-[#875e33] hover:text-white hover:border-[#875e33] hover:scale-105 active:scale-95 cursor-pointer shadow-sm font-medium"
