@@ -4,7 +4,6 @@ import LuggageTag from "./LuggageTag";
 import { NoPhoneIcon } from "./TicketBits";
 
 const COLORS = {
-  bg: "#7C8CAB",
   blue: "#c5a46d",
   tan: "#c5a46d",
   green: "#c5a46d",
@@ -12,7 +11,7 @@ const COLORS = {
 
 export default function Venue() {
   return (
-    <section className={`select-none px-4 py-10 sm:px-10 md:px-16 lg:px-20`} style={{ background: COLORS.bg }}>
+    <section className="select-none bg-secondary px-4 py-10 sm:px-10 md:px-16 lg:px-20">
       <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1fr_1.4fr] lg:items-center">
         <div className="order-2 lg:order-1">
           <Ticket />

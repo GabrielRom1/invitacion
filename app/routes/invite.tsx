@@ -78,7 +78,7 @@ export default function Invite() {
         <Divider />
         
         {/* codigo de vestimenta  con link de inspiracion*/}
-        <DressCode/>
+        <DressCode />
 
         {/* confirmacion de asistencia con link a formulario */}
 
@@ -87,6 +87,8 @@ export default function Invite() {
         <FutureSection />
 
         <GalleryDigitalSection />
+
+        <Divider />
 
         <Footer />
 

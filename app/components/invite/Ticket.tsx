@@ -41,13 +41,13 @@ export default function Ticket() {
 
           <div className="relative my-5">
             <div className="border-t border-dashed border-[#2B2E36]/25" />
-            {/* <span className="absolute -left-[41px] top-1/2 h-5 w-5 -translate-y-1/2 rounded-full bg-[#7C8CAB]" /> */}
-            {/* <span className="absolute -right-[41px] top-1/2 h-5 w-5 -translate-y-1/2 rounded-full bg-[#7C8CAB]" /> */}
+            {/* <span className="absolute -left-[41px] top-1/2 h-5 w-5 -translate-y-1/2 rounded-full bg-secondary" /> */}
+            {/* <span className="absolute -right-[41px] top-1/2 h-5 w-5 -translate-y-1/2 rounded-full bg-secondary" /> */}
           </div>
 
           <div className="mb-4 flex items-center justify-between gap-3">
             <div className="flex items-center gap-2 text-[13px] font-semibold uppercase tracking-wide text-[#2B2E36]">
-              <MapPin size={16} className="shrink-0 text-[#7C8CAB]" />
+              <MapPin size={16} className="shrink-0 text-secondary" />
               Hacienda Bendecida, Carolina
             </div>
             <span className="shrink-0 text-sm font-bold text-[#C79A3B]">2:00 PM</span>

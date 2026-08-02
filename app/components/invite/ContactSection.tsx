@@ -1,6 +1,6 @@
 export default function ContactSection() {
   return (
-    <section className="w-full bg-[#c5a46d] text-white py-10 px-6 sm:px-12 md:px-16 select-none font-sans">
+    <section className="w-full bg-secondary text-white py-10 px-6 sm:px-12 md:px-16 select-none font-sans">
       <div className="max-w-3xl mx-auto text-center">
         <h3 className="font-serif italic text-4xl md:text-5xl text-white tracking-wide mb-4">
           Contactos
